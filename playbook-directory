@@ -1,0 +1,8 @@
+# create directory
+---
+- name: folder create
+  hosts: localhost
+  tasks: 
+    - file:
+        path: /tmp/ansible-test
+        state: directory
